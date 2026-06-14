@@ -1,3 +1,4 @@
+print("started")
 from flask import Flask, render_template, Response, request, redirect, url_for, jsonify     # Flask framework imports for web app functionality
 import time                             # For timing operations or expiration checks
 from threading import Timer             # To handle concurrency (e.g., camera locking)
@@ -6,10 +7,14 @@ import pyttsx3                          # Text-to-speech conversion library
 import time
 from multiprocessing import Process
 
+print("2")
 # Custom preprocessing modules for image handling and training logic
+print("2.0")
 import preprocessing.image_processing as ip
+print("2.1")
 import preprocessing.train_model as train
 
+print("3")
 # Utility to load all pre-trained models and label encoders
 from load_models import load_all_categories
 
@@ -238,7 +243,7 @@ def train_model():
         result = train.main()
     
     # Decide whether to show labels in the UI or not
-    if result == 'no Data' or result == 'Trained Successfully':
+    if result == 'no Data' or result == 'Trained Successfully': 
         labels = None  # No labels to show
     else:
         labels = train.labels  # Labels available to show/remove
@@ -258,6 +263,8 @@ def update_text():
     print("Custom text updated to:", text)
     return jsonify({"status": "success", "text": text})
 
+print("running")
 
 if __name__ == '__main__':
+    print("running")
     app.run(debug=True)

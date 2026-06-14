@@ -207,7 +207,7 @@
       The hand landmark model bundle detects the keypoint localization of 21 hand-knuckle coordinates within the detected hand regions. The model was trained on approximately 30K real-world images, as well as several rendered synthetic hand models imposed over various backgrounds.
     </p>
     <div class="model-extra">
-      <img src="{{ url_for('static', filename='model/mediapipe/hand_landmarks.png') }}" alt="Hand Landmarks">
+      <img src="{{ url_for('static', filename='model/mediapipes/hand_landmarks.png') }}" alt="Hand Landmarks">
     </div>
     <p>
       The hand landmarker model bundle contains a palm detection model and a hand landmarks detection model. The Palm detection model locates hands within the input image, and the hand landmarks detection model identifies specific hand landmarks on the cropped hand image defined by the palm detection model.

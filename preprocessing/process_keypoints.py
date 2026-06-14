@@ -5,6 +5,7 @@ import time             # Import time module to handle time-related operations (
 import warnings         # Import warnings module to manage or suppress warning messages
 
 # ignore exactly the “feature names” UserWarning from sklearn.base
+print("key")
 warnings.filterwarnings(
     "ignore",
     message="X does not have valid feature names, but MinMaxScaler was fitted with feature names"

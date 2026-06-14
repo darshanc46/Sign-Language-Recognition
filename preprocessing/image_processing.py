@@ -1,10 +1,11 @@
-import cv2                                          # mainly used for real-time computer vision tasks
-import mediapipe as mp                              # useful for detecting hand landmarks, pose, face, etc.
+import cv2            
+import mediapipe as mp                              # useful for detecting hand landmarks, pose, face, etc.                            # mainly used for real-time computer vision tasks
 import sys                                          # used for accessing system-specific parameters and functions
-import threading                                    # allows running multiple threads (useful for handling video capture and processing in parallel)
+import threading                               # allows running multiple threads (useful for handling video capture and processing in parallel)
 import preprocessing.process_keypoints as kp        # Import custom keypoint processing functions from the preprocessing package
 
 # Create a lock object to manage access to the camera resource across multiple threads
+print("cam lock")
 camera_lock = threading.Lock()
 
 # Default video dimensions (can be used for webcam capture)

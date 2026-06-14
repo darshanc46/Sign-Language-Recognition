@@ -1,6 +1,7 @@
+# python 3.10 or 3.11
 pandas
 numpy 
-mediapipe
+mediapipe==0.10.9
 scikit-learn
 Flask
 pyttsx3
