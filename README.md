@@ -83,8 +83,6 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Open `http://127.0.0.1:5000` in your browser and allow camera access.
-
 ## Usage
 
 1. Open **Sign Recognition** and allow the webcam.
@@ -92,13 +90,6 @@ Open `http://127.0.0.1:5000` in your browser and allow camera access.
 3. Show a sign to the camera. The recognised text appears on screen.
 4. Turn audio or the landmark overlay on or off using the switches.
 5. To add your own sign, open **Custom Sign** and train a new model.
-
-## Team
-
-| Name | Contribution |
-| --- | --- |
-| Darshan C | _Add what you worked on, for example data collection, model training, Flask pages, speech feature_ |
-| _Teammate name_ | _Contribution_ |
 
 ## Contact
 
