@@ -2,12 +2,6 @@
 
 A real-time sign language recognition web application. It reads hand gestures from a live webcam feed, classifies them with machine learning models, shows the result as text and can speak it aloud.
 
-> **Team project** built by students of CMR University, Bengaluru.
-
-<!-- Add 1-2 screenshots or a short demo GIF here, for example:
-![Live recognition](docs/screenshot-recognition.png)
--->
-
 ## Features
 
 - **Live recognition** from the webcam using MediaPipe hand landmarks
